@@ -4,69 +4,264 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Subtle Thread</title>
+  <style>
+    :root {
+      --bg: #f6f5f3;
+      --card: #ffffff;
+      --text: #292524;
+      --muted: #6b6b6b;
+      --border: #e7e5e4;
+      --accent: #7FBF3F;
+      --accent-soft: #eef6e3;
+      --shadow: 0 10px 30px rgba(41, 37, 36, 0.08);
+      --radius: 22px;
+      --max-width: 780px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom, #fbfbfa 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      min-height: 100vh;
+      padding: 40px 20px 64px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #4f7c24;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 640px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px 24px;
+    }
+
+    .section + .section {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 14px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: #fafaf9;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: #fafaf9;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .contact:hover {
+      transform: translateY(-1px);
+      border-color: #d6d3d1;
+      box-shadow: 0 8px 18px rgba(41, 37, 36, 0.06);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 24px 14px 40px;
+      }
+
+      .card {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .section + .section {
+        margin-top: 22px;
+        padding-top: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy – Subtle Thread</h1>
+  <main class="wrap">
+    <div class="container">
+      <header class="hero">
+        <div class="eyebrow">Subtle Thread</div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">
+          Subtle Thread is designed to keep your thoughts private and under your control.
+        </p>
+      </header>
 
-  <p>
-    Subtle Thread is designed to keep your thoughts private and under your control.
-  </p>
+      <section class="card">
+        <div class="section">
+          <h2>Your Data</h2>
+          <p>
+            All thoughts, tags, and connections you create are stored locally on your device and may
+            be synced privately through your iCloud account using Apple’s CloudKit framework.
+            Subtle Thread does not store your personal thought data on its own servers.
+          </p>
+        </div>
 
-  <h2>Your Data</h2>
-  <p>
-    All thoughts, tags, and connections you create are stored locally on your device and may be synced privately through your iCloud account using Apple’s CloudKit framework.
-    Subtle Thread does not store your personal thought data on its own servers.
-  </p>
+        <div class="section">
+          <h2>Authentication</h2>
+          <p>
+            Subtle Thread uses Sign in with Apple and secure authentication services to identify your
+            account. This allows your insights to remain consistent across your devices.
+            Subtle Thread does not store passwords.
+          </p>
+        </div>
 
-  <h2>Authentication</h2>
-  <p>
-    Subtle Thread uses Sign in with Apple and secure authentication services to identify your account.
-    This allows your insights to remain consistent across your devices.
-    Subtle Thread does not store passwords.
-  </p>
+        <div class="section">
+          <h2>AI-Generated Insights</h2>
+          <p>
+            When generating insights (“Synthesis”), selected portions of your content may be sent
+            securely to backend services for processing by AI models. This processing is used only to
+            generate insights for you.
+          </p>
+        </div>
 
-  <h2>AI-Generated Insights</h2>
-  <p>
-    When generating insights (“Synthesis”), selected portions of your content may be sent securely to backend services for processing by AI models.
-    This processing is used only to generate insights for you.
-  </p>
+        <div class="section">
+          <h2>Backend Data</h2>
+          <p>
+            To support the synthesis feature, Subtle Thread stores limited backend data such as:
+          </p>
+          <ul>
+            <li>Account identifiers used for authentication</li>
+            <li>AI-generated insights</li>
+            <li>Operational data such as request tracking and system reliability information</li>
+          </ul>
+          <p>
+            Subtle Thread does not store your full thought history on backend systems.
+          </p>
+        </div>
 
-  <h2>Backend Data</h2>
-  <p>
-    To support the synthesis feature, Subtle Thread stores limited backend data such as:
-  </p>
-  <ul>
-    <li>Account identifiers (for authentication)</li>
-    <li>AI-generated insights</li>
-    <li>Operational data (such as request tracking and system reliability)</li>
-  </ul>
-  <p>
-    Subtle Thread does not store your full thought history on backend systems.
-  </p>
+        <div class="section">
+          <h2>No Tracking or Advertising</h2>
+          <p>
+            Subtle Thread does not use advertising, tracking, or analytics services. Your data is not
+            sold or used for marketing purposes.
+          </p>
+        </div>
 
-  <h2>No Tracking or Advertising</h2>
-  <p>
-    Subtle Thread does not use advertising, tracking, or analytics services.
-    Your data is not sold or used for marketing purposes.
-  </p>
+        <div class="section">
+          <h2>Account Deletion</h2>
+          <p>
+            You can delete your account at any time from within the app. This will:
+          </p>
+          <ul>
+            <li>Delete your backend account and associated data</li>
+            <li>Delete all thoughts and related data stored in your iCloud account by the app</li>
+          </ul>
+          <div class="note">
+            This action is permanent and cannot be undone.
+          </div>
+        </div>
 
-  <h2>Account Deletion</h2>
-  <p>
-    You can delete your account at any time from within the app.
-    This will:
-  </p>
-  <ul>
-    <li>Delete your backend account and associated data</li>
-    <li>Delete all thoughts and related data stored in your iCloud account by the app</li>
-  </ul>
-  <p>
-    This action is permanent and cannot be undone.
-  </p>
+        <div class="section">
+          <h2>Contact</h2>
+          <p>
+            If you have any questions about privacy, please contact:
+          </p>
+          <a class="contact" href="mailto:subtlethreadapp@gmail.com">
+            subtlethreadapp@gmail.com
+          </a>
+        </div>
+      </section>
 
-  <h2>Contact</h2>
-  <p>
-    If you have any questions about privacy, please contact subtlethreadapp@gmail.com.
-  </p>
-
+      <div class="footer">
+        Last updated: April 2026
+      </div>
+    </div>
+  </main>
 </body>
 </html>
